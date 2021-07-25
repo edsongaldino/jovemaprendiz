@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -88,14 +88,14 @@
                                 <li class="nav-item active"><a class="page-scroll" href="#home">home</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#about">Conheça o programa</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#portfolio">Onde estamos</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#services">Vagas</a></li>
+                                <li class="nav-item"><a href="http://www.intelecto.com.br/holerith/empresa/?id=2142" target="_blank">Holerite Online</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#contact">Contato</a></li>
                             </ul>
                         </div>
                         
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li><a class="page-scroll solid" href="#cadastro">Cadastre-se</a></li>
+                                <li><a class="solid" href="http://mariadelourdes.org.br/cadastra_jovem/" target="_blank">Cadastre-se</a></li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->
@@ -117,29 +117,8 @@
             </ol>
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="slider-content">
-                                    <h1 class="title">EMPRESAS</h1>
-                                    <p class="text">Toda organização pode ter aprendizes. A Lei da Aprendizagem determina que as empresas de médio e grande porte contratem um número de aprendizes equivalente a um mínimo de 5% e um máximo de 15% do seu quadro de funcionários.</p>
-                                    <ul class="slider-btn rounded-buttons">
-                                        <li><a class="main-btn rounded-one page-scroll" href="#about">Saiba mais</a></li>
-                                        <li><a class="main-btn rounded-two page-scroll" href="#cadastro">CADASTRE-SE</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- container -->
-                    <div class="slider-image-box d-none d-lg-flex align-items-end">
-                        <div class="slider-image">
-                            <img src="assets/images/slider/1.png" alt="Hero">
-                        </div> <!-- slider-imgae -->
-                    </div> <!-- slider-imgae box -->
-                </div> <!-- carousel-item -->
 
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -148,7 +127,7 @@
                                     <p class="text">O Jovem Aprendiz é uma política pública que incentiva jovens estudantes a procurarem o primeiro emprego, garantindo todos os seus direitos. O modelo une experiência profissional com curso de profissionalização em alguma área específica.</p>
                                     <ul class="slider-btn rounded-buttons">
                                         <li><a class="main-btn rounded-one page-scroll" href="#about">SAIBA COMO FUNCIONA</a></li>
-                                        <li><a class="main-btn rounded-two page-scroll" href="#cadastro">CADASTRE-SE</a></li>
+                                        <li><a class="main-btn rounded-two" href="http://mariadelourdes.org.br/cadastra_jovem/" target="_blank">CADASTRE-SE</a></li>
                                     </ul>
                                 </div> <!-- slider-content -->
                             </div>
@@ -287,7 +266,7 @@
 
     <!--====== FEATRES TWO PART START ======-->
 
-    <section id="services" class="features-area">
+    <section id="services" class="features-area" style="display: none;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
@@ -390,7 +369,7 @@
 
     <!--====== FEATRES TWO PART ENDS ======-->
 
-    <section id="cadastro" class="formulario-cadastro">
+    <section id="cadastro" class="formulario-cadastro" style="display: none;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
