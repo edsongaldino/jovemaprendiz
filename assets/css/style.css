@@ -3290,3 +3290,7 @@ a.area{
 .about-area {
   background-color: #f4f6f7 !important;
 }
+
+p {
+  text-align: justify !important;
+}

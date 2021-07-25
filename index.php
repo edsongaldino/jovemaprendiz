@@ -1,3 +1,6 @@
+<?php
+include("../site_mod_include.php");
+?>
 <!doctype html>
 <html class="no-js" lang="pt-br">
 
@@ -569,13 +572,13 @@
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Envie-nos <span>uma mensagem.</span></h4>
                         
-                        <form id="contact-form" action="assets/contact.php" method="post">
+                        <form id="contact-form" action="assets/envia_contato.php" method="POST">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-input mt-25">
                                         <label>Nome</label>
                                         <div class="input-items default">
-                                            <input name="name" type="text" placeholder="Nome">
+                                            <input name="nome" type="text" placeholder="Nome" required>
                                             <i class="lni lni-user"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -584,7 +587,7 @@
                                     <div class="form-input mt-25">
                                         <label>Email</label>
                                         <div class="input-items default">
-                                            <input type="email" name="email" placeholder="Email">
+                                            <input type="email" name="email" placeholder="Email" required>
                                             <i class="lni lni-envelope"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -593,7 +596,7 @@
                                     <div class="form-input mt-25">
                                         <label>Telefone</label>
                                         <div class="input-items default">
-                                            <input type="text" name="email" placeholder="Telefone">
+                                            <input type="text" name="telefone" placeholder="Telefone" required>
                                             <i class="lni lni-phone"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -602,7 +605,7 @@
                                     <div class="form-input mt-25">
                                         <label>Mensagem</label>
                                         <div class="input-items default">
-                                            <textarea name="massage" placeholder="Mensagem"></textarea>
+                                            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
                                             <i class="lni lni-pencil-alt"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -610,7 +613,8 @@
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
-                                        <button class="main-btn light-rounded-two">Enviar</button>
+                                        <input type="hidden" name="acao" value="<?php echo codifica("envia-form-contato");?>">
+                                        <button type="submit" class="main-btn light-rounded-two">Enviar</button>
                                     </div> <!-- form input -->
                                 </div>
                             </div> <!-- row -->
