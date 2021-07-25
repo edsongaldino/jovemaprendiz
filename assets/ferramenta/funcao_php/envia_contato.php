@@ -14,8 +14,8 @@ function envia_contato($nome,$email,$telefone,$assunto,$mensagem) {
 			<b>Assunto</b>: ".utf8_decode($assunto)."<br>
 			<b>Mensagem</b>: ".utf8_decode($mensagem)."<br>
 			</p>
-			<p>Este e um e-mail enviado pelo site www.patriciacanoff.com.br.</p>
-			<p>Patricia Canoff - Consultoria Financeira</p>
+			<p>Este e um e-mail enviado pelo site www.larjovemaprendiz.ong.br.</p>
+			<p>Lar Maria de lourdes - Jovem Aprendiz</p>
 						
 			";
 	
@@ -36,15 +36,14 @@ function envia_contato($nome,$email,$telefone,$assunto,$mensagem) {
 	
 		//Define o remetente
 		// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-		$mail->SetFrom('consultoria@patriciacanoff.com.br', utf8_decode('Patrícia Canoff - Consultoria Financeira')); //Seu e-mail
+		$mail->SetFrom('suporte@larjovemaprendiz.ong.br', utf8_decode('Lar Maria de lourdes - Jovem Aprendiz')); //Seu e-mail
 		$mail->AddReplyTo($email, utf8_decode($nome)); //Seu e-mail
 		$mail->Subject = utf8_decode($assunto);//Assunto do e-mail
 	
 	
 		//Define os destinatário(s)
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		$mail->AddAddress('comercial@patriciacanoff.com.br', 'Patrícia Canoff - Consultoria Financeira');
-		$mail->AddCC('consultoria@patriciacanoff.com.br', 'Patrícia Canoff - Consultoria Financeira'); // Copia
+		$mail->AddAddress('edson@lancamentosonline.com.br', 'Lar Maria de lourdes - Jovem Aprendiz');
 		$mail->AddCC('edsongaldino@datapix.com.br', 'Datapix'); // Copia
 		//Campos abaixo são opcionais 
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

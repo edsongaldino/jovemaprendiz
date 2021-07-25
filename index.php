@@ -613,7 +613,7 @@ include("../site_mod_include.php");
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
-                                        <input type="hidden" name="acao" value="<?php echo codifica("envia-form-contato");?>">
+                                        <input type="hidden" name="acao" value="envia-form-contato">
                                         <button type="submit" class="main-btn light-rounded-two">Enviar</button>
                                     </div> <!-- form input -->
                                 </div>

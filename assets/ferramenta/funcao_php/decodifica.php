@@ -20,3 +20,4 @@ function js_array($array)
     $temp = array_map('js_str', $array);
     return '[' . implode(',', $temp) . ']';
 }
+?>
