@@ -14,8 +14,7 @@ if($_POST["acao"] == "envia-form-contato"){
 	$mensagem = $_POST['mensagem'];
 
     $status_contato = envia_contato($nome,$email,$telefone,$assunto,$mensagem);
-    
-    exit;
+
     if($status_contato) {
         $status_envio = "sucesso";
         redireciona("../index.php?envio=sucesso");
