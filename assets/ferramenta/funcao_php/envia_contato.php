@@ -36,7 +36,7 @@ function envia_contato($nome,$email,$telefone,$assunto,$mensagem) {
 	
 		//Define o remetente
 		// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-		$mail->SetFrom('suporte@larjovemaprendiz.ong.br', utf8_decode('Lar Maria de lourdes - Jovem Aprendiz')); //Seu e-mail
+		$mail->SetFrom('suporte@larjovemaprendiz.ong.br', 'Lar Maria de lourdes - Jovem Aprendiz'); //Seu e-mail
 		$mail->AddReplyTo($email, utf8_decode($nome)); //Seu e-mail
 		$mail->Subject = utf8_decode($assunto);//Assunto do e-mail
 	
@@ -44,7 +44,7 @@ function envia_contato($nome,$email,$telefone,$assunto,$mensagem) {
 		//Define os destinatário(s)
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		$mail->AddAddress('edson@lancamentosonline.com.br', 'Lar Maria de lourdes - Jovem Aprendiz');
-		$mail->AddCC('edsongaldino@datapix.com.br', 'Datapix'); // Copia
+		//$mail->AddCC('edsongaldino@datapix.com.br', 'Datapix'); // Copia
 		//Campos abaixo são opcionais 
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		//$mail->AddCC('destinarario@dominio.com.br', 'Destinatario'); // Copia
