@@ -43,7 +43,7 @@ function envia_contato($nome,$email,$telefone,$assunto,$mensagem) {
 	
 		//Define os destinatário(s)
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		$mail->AddAddress('edson@lancamentosonline.com.br', 'Lar Maria de lourdes - Jovem Aprendiz');
+		$mail->AddAddress('edson@lancamentosonline.com.br');
 		//$mail->AddCC('edsongaldino@datapix.com.br', 'Datapix'); // Copia
 		//Campos abaixo são opcionais 
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
